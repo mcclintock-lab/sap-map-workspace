@@ -1,0 +1,52 @@
+#!/usr/bin/env python3
+
+from sapmap import genSapMap
+import os
+import sys
+import json
+import tracemalloc
+import glob
+
+input_dir = '/work/input/'
+srch_path = input_dir + '*shp'
+shp_files = glob.glob(srch_path)
+
+if len(shp_files)==0:
+    print("no shapes found in input directory")
+else: print(shp_files)
+
+configPath = sys.argv[1]
+
+f = open(configPath,)
+config = json.load(f)
+
+default = config['default'] if 'default' in config else {}
+
+tracemalloc.start()
+
+for infile in shp_files:
+
+    genSapMap(
+    infile=infile,
+    **default
+    # outPath=outPath,
+    # overwrite=True,
+    # method='sap',
+    # importanceField='weight',
+    # importanceFactorField=None,
+    # areaFactor=10000,
+    # uniqueIdField=uniqueIdField,
+    # outCrsString='epsg:3857',
+    # outResolution=20,
+    # bounds=bounds,
+    # boundsPrecision=0,
+    # allTouchedSmall=True,
+    # allTouchedSmallFactor=1.25,
+    # fixGeom=False,
+    # maxArea=None,
+    # maxSap=None,
+    # logToFile=True
+    )
+
+print('Peak memory usage: {0} MB'.format(tracemalloc.get_traced_memory()[1]/1000000))
+tracemalloc.stop()

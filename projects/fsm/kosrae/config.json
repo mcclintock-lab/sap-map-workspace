@@ -1,0 +1,22 @@
+{
+    "runs": [
+            {"infile": "/work/input/research.shp"},
+            {"infile": "/work/input/aquaculture.shp"},
+            {"infile": "/work/input/transportation.shp"},
+            {"infile": "/work/input/cultural_use.shp"},
+            {"infile": "/work/input/community_recreational_use.shp"},
+            {"infile": "/work/input/shapes_cropped.shp"},
+            {"infile": "/work/input/fisheries.shp"},
+            {"infile": "/work/input/other.shp"},
+            {"infile": "/work/input/tourism.shp"}
+        ],
+    "outPath": "/work/output",
+    "outResolution": 100,
+    "areaFactor": 10000,
+    "bounds": [ 162.69, 5.05, 163.24, 5.58 ],
+    "uniqueIdField": "rspns_d",
+    "logToFile": true,
+    "allTouchedSmall": true
+
+}
+

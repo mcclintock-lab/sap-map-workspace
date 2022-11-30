@@ -1,0 +1,7 @@
+#!/bin/bash
+
+ls input/*shp > input/shp_names.txt
+
+cat input/shp_names.txt
+
+rm input/shp_names.txt

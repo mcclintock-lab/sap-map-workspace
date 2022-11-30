@@ -1,0 +1,13 @@
+{
+    "default": {
+        "outPath": "/work/output",
+        "outResolution": 100,
+        "areaFactor": 10000,
+        "bounds": [ -34, 35.3, -25.6, 41.5 ],
+        "uniqueIdField": "rspns_d",
+        "importanceField": "weight",
+        "logToFile": true,
+        "allTouchedSmall": true,
+        "overwrite": true
+    }
+}

@@ -20,5 +20,4 @@ examples/*/*.tif
 examples/*/*.log.txt
 examples/*/*.geojson
 examples/*/*.manifest.json
-projects/**/*
 docs/_build/html
