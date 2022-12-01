@@ -1,8 +1,9 @@
 #!/bin/bash
 
-inpath=/Users/petermenzies/SeaSketch/azores/azo-ous/outputs/flores-corvo-santamaria/shapefiles/corvo
-outpath=/Users/petermenzies/SeaSketch/azores/heatmaps
+echo 'inpath':
+read inpath
+
+echo 'outpath':
+read outpath
 
 docker-compose run --rm --service-ports -v $inpath:/work/input -v $outpath:/work/output  sapmap
-
-
