@@ -1,9 +1,16 @@
 #!/bin/bash
 
-inpath=/Users/petermenzies/SeaSketch/azores/azo-ous/outputs/phase-3/shapefiles/terceira
-# inpath=/Users/petermenzies/SeaSketch/azores/azo-ous/outputs/phase-3/shapefiles/saomiguel
-# inpath=/Users/petermenzies/SeaSketch/azores/azo-ous/outputs/phase-3/shapefiles/saojorge
-outpath=/Users/petermenzies/Library/CloudStorage/Box-Box/GIS/Waitt/Azores/Data_Products/Heatmaps/Phase_3_heatmaps
+dir_mbk_in=/Users/petermenzies/SeaSketch
+dir_mbk_out=/Users/petermenzies/Library/CloudStorage/Box-Box/GIS/Waitt
+
+# dir_imac_in=
+# dir_imac_out=
+
+# inpath=$dir_mbk_in/azores/azo-ous/outputs/phase-3/shapefiles/terceira
+# inpath=$dir_mbk_in/azores/azo-ous/outputs/phase-3/shapefiles/saomiguel
+inpath=$dir_mbk_in/azores/azo-ous/outputs/phase-3/shapefiles/saojorge
+
+outpath=$dir_mbk_out/Azores/Data_Products/Heatmaps/Phase_3_heatmaps
 # outpath=/Users/petermenzies/Downloads
 
 docker-compose run --rm --service-ports -v $inpath:/work/input -v $outpath:/work/output  sapmap

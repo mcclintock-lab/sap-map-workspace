@@ -1,19 +1,19 @@
 {
     "runs": [
-        {"infile": "/work/input/aqu_aqu_ter.shp"}, 
-        {"infile": "/work/input/com_fis_ter.shp"}, 
-        {"infile": "/work/input/rec_fis_ter.shp"}, 
-        {"infile": "/work/input/rec_tou_ter.shp"}, 
-        {"infile": "/work/input/sci_mon_ter.shp"}, 
-        {"infile": "/work/input/tou_fis_ter.shp"}, 
-        {"infile": "/work/input/und_her_ter.shp"}
+        {"infile": "/work/input/aqu_aqu_sao.shp"}, 
+        {"infile": "/work/input/com_fis_sao.shp"}, 
+        {"infile": "/work/input/rec_fis_sao.shp"}, 
+        {"infile": "/work/input/rec_tou_sao.shp"}, 
+        {"infile": "/work/input/sci_mon_sao.shp"}, 
+        {"infile": "/work/input/tou_fis_sao.shp"}, 
+        {"infile": "/work/input/und_her_sao.shp"}
     ],
 
     "default": {
         "outPath": "/work/output",
         "outResolution": 100,
         "areaFactor": 10000,
-        "bounds": [ -34, 35.3, -25.6, 41.5 ],
+        "bounds": [-28.5795641, 38.4366981, -27.5880584, 39.0581465],
         "uniqueIdField": "rspns_d",
         "importanceField": "weight",
         "logToFile": true,
