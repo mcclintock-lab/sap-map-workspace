@@ -1,9 +1,13 @@
 # prints bounding box of shapes to be rasterized
 import geopandas as gpd
 
-shps = gpd.read_file('/Users/petermenzies/SeaSketch/azores/azo-ous/outputs/phase-3/shapefiles/shapes_cropped.shp')
-island = 'saojorge'
+shps_file = '/Users/petermenzies/SeaSketch/azores/azo-ous/outputs/flores-corvo-santamaria/shapefiles/shapes_cropped.shp'
+shps = gpd.read_file(shps_file)
+island = 'santa maria'
 shps = shps[shps['island']==island]
+shps = shps.buffer(0.01)
 
-bounds = str(shps.total_bounds).replace('  ', ' ').replace(' ', ', ')
+bounds = [x for x in shps.total_bounds]
+bounds = [round(x,2) for x in bounds]
+
 print(bounds)
