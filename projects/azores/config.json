@@ -1,15 +1,11 @@
 {
     "runs": [
-        {"infile": "/work/input/aqu_aqu_san.shp"},
-        {"infile": "/work/input/com_fis_san.shp"},
-        {"infile": "/work/input/commercial_fishing_santa_maria.shp"},
-        {"infile": "/work/input/rec_fis_san.shp"},
-        {"infile": "/work/input/rec_tou_san.shp"}
+        {"infile": "/work/input/sci_mon_mig.shp"}
     ],
 
     "default": {
         "outPath": "/work/output",
-        "outResolution": 50,
+        "outResolution": 100,
         "areaFactor": 1,
         "uniqueIdField": "rspns_d",
         "importanceField": "weight",
