@@ -8,7 +8,7 @@ shps = glob.glob("input/*shp")
 
 for i in range(0, len(shps)):
     if i < len(shps)-1:
-        print(f'{{"infile": "/work/input/{shps[i]}"}},')
+        print(f'{{"infile": "/work/{shps[i]}"}},')
     else:
-        print(f'{{"infile": "/work/input/{shps[i]}"}}')
+        print(f'{{"infile": "/work/{shps[i]}"}}')
 
