@@ -1,11 +1,11 @@
 {
     "runs": [
-        {"infile": "/work/input/sci_mon_mig.shp"}
+        {"infile": "/work/input/rec_tou_mig.shp"}
     ],
 
     "default": {
         "outPath": "/work/output",
-        "outResolution": 100,
+        "outResolution": 20,
         "areaFactor": 1,
         "uniqueIdField": "rspns_d",
         "importanceField": "weight",

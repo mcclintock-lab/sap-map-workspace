@@ -1,10 +1,13 @@
 #!/bin/bash
 
-dir=/Users/petermenzies/SeaSketch/azores
+# dir=/Users/petermenzies/SeaSketch/azores
+dir=/Users/menzies/Projects/azores
 
 # inpath=$dir/azo-ous/outputs/phase-3/shapefiles/saojorge
 inpath=$dir/azo-ous/outputs/phase-3/shapefiles/saomiguel
-outpath=/Users/petermenzies/Library/CloudStorage/Box-Box/GIS/Waitt/Azores/Data_Products/Heatmaps/Phase_3_heatmaps_draft
+# outpath=/Users/petermenzies/Library/CloudStorage/Box-Box/GIS/Waitt/Azores/Data_Products/Heatmaps/Phase_3_heatmaps_draft
+# outpath=/Users/menzies/Library/CloudStorage/Box-Box/GIS/Waitt/Azores/Data_Products/Heatmaps/Phase_3_heatmaps_draft
+outpath=/Users/menzies/Desktop
 
 docker-compose run --rm --service-ports -v $inpath:/work/input -v $outpath:/work/output sapmap
 

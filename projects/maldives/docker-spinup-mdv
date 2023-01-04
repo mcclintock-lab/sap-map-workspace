@@ -1,9 +1,7 @@
 #!/bin/bash
 
-dir=/Users/petermenzies/SeaSketch/maldives
-
-inpath=$dir/combined_shps
-outpath=$dir/heatmaps
+inpath=/Users/menzies/Projects/maldives/eez-shapes
+outpath=/Users/menzies/Projects/maldives/eez-heatmaps
 
 docker-compose run --rm --service-ports -v $inpath:/work/input -v $outpath:/work/output  sapmap
 
