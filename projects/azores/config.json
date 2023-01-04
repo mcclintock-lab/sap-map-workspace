@@ -1,6 +1,6 @@
 {
     "runs": [
-        {"infile": "/work/input/rec_tou_mig.shp"}
+        {"infile": "/work/input/recreational_fishing_santa_maria.shp"}
     ],
 
     "default": {
