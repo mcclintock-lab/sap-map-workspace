@@ -1,0 +1,6 @@
+#!/bin/bash
+
+mkdir -p output/logs
+
+rm ./output/*txt
+mv ./output/*json ./output/logs

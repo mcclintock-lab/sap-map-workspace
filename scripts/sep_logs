@@ -1,6 +1,0 @@
-#!/bin/bash
-
-mkdir -p logs
-
-mv ./*txt logs
-mv ./*json logs
